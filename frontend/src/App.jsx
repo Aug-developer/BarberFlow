@@ -1,10 +1,7 @@
+import Login from "./pages/Login";
+
 function App() {
-  return (
-    <div>
-      <h1>BarberFlow</h1>
-      <p>Primeiro passo do projeto 🚀</p>
-    </div>
-  )
+  return <Login />;
 }
 
-export default App
+export default App;
