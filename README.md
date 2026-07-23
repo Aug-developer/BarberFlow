@@ -1,4 +1,4 @@
-\# 💈 BarberFlow
+## 💈 BarberFlow
 
 
 
@@ -6,7 +6,7 @@ Sistema de gerenciamento para barbearias desenvolvido para estudo e portfólio.
 
 
 
-\## 🚀 Tecnologias
+## 🚀 Tecnologias
 
 
 
@@ -14,13 +14,15 @@ Sistema de gerenciamento para barbearias desenvolvido para estudo e portfólio.
 
 \- Tailwind CSS
 
-\- FastAPI
+\-Node.js
+
+\- Express
 
 \- PostgreSQL
 
 
 
-\## 📌 Funcionalidades
+## 📌 Funcionalidades
 
 
 
@@ -28,9 +30,9 @@ Em desenvolvimento:
 
 
 
-\- \[ ] Cadastro de usuários
+\- \[X] Cadastro de usuários
 
-\- \[ ] Login
+\- \[X] Login
 
 \- \[ ] Agendamento de horários
 
@@ -40,7 +42,7 @@ Em desenvolvimento:
 
 
 
-\## 📂 Estrutura do projeto
+## 📂 Estrutura do projeto
 
 
 
