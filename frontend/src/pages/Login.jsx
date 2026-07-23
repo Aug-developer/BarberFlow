@@ -50,7 +50,7 @@ function Login() {
         {/* Link para Cadastro */}
         <p className="text-center text-sm text-slate-600 mt-6">
           Ainda não tem conta?{' '}
-          <a href="#" className="text-blue-600 font-semibold hover:underline">
+          <a href="/cadastro" className="text-blue-600 font-semibold hover:underline">
             Cadastrar-se
           </a>
         </p>
