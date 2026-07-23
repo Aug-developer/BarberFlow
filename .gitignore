@@ -1,0 +1,9 @@
+# Ignorar dependências do Node.js
+backend/node_modules/
+
+# Ignorar arquivos locais e credenciais do DBeaver
+database/.dbeaver/
+database/.project
+
+# Ignorar configurações locais do VS Code
+.vscode/
