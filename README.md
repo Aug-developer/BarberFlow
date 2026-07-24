@@ -30,15 +30,13 @@ Em desenvolvimento:
 
 
 
-\- \[X] Cadastro de usuários
-
-\- \[X] Login
-
-\- \[ ] Agendamento de horários
-
-\- \[ ] Gerenciamento de clientes
-
-\- \[ ] Controle de barbeiros
+- [x] Interface de cadastro
+- [x] Interface de login
+- [ ] Cadastro de usuários integrado ao banco
+- [ ] Autenticação de usuários
+- [ ] Agendamento de horários
+- [ ] Gerenciamento de clientes
+- [ ] Controle de barbeiros
 
 
 
