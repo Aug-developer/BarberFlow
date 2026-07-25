@@ -12,7 +12,7 @@ function Cadastro() {
       </div>
 
       {/* Card de Cadastro */}
-      <div className="w-[450px] h-auto bg-white rounded-xl shadow-lg p-8 space-y-4">
+      <div className="w-112.5 h-auto bg-white rounded-xl shadow-lg p-8 space-y-4">
         {/* Campo Nome */}
         <div className="flex flex-col gap-1">
           <label className="text-xs font-semibold text-slate-700 uppercase tracking-wider">
