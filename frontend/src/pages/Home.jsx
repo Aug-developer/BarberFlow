@@ -1,17 +1,15 @@
-import Button from "../components/Button";
-
 function Home() {
   return (
-    <div className="min-h-screen bg-[#161412] p-4">
+    <div className="bg-[#111111]">
       {/* Pagina Principal */}
 
       {/* Cabeçalho */}
-      <header className="flex bg-[#161412] justify-between items-center p-4 border-b border-[#3A342C]">
+      <header className="bg-[#1a1a1a] flex justify-between items-center p-5 border-b border-gray-500">
         <div>
           <img src="logo.png" alt="LogoBarberFlow" />
         </div>
-        <nav className="text-[#9B9187]">
-          <ul className="flex list-none gap-5 m-0 p-0">
+        <nav>
+          <ul className="flex gap-6 mr-4 text-[#aaaaaa]">
             <li>Home</li>
             <li>Sobre</li>
             <li>Serviços</li>
@@ -21,89 +19,110 @@ function Home() {
       </header>
 
       {/* Conteúdo */}
-      <main className="max-w-5xl mx-auto">
+      <main>
         {/* Home */}
-        <section className="py-10">
-          <div>
-            <h1 className="text-[#F2EDE4] text-3xl md:text-4xl font-bold flex justify-center">
-              Bem-vindo ao BarberFlow
-            </h1>
-            <p className="text-[#9B9187] flex justify-center mt-2">
-              Agende seu horário de forma rápida e prática!
+        <section className="border-b border-[#c9a84c]">
+          <div className="flex flex-col gap-1 text-center py-11">
+            <h1 className="text-[#c9a84c] text-xl">Bem-vindo ao BarberFlow</h1>
+            <p className="text-[#f0ebe0] text-5xl py-3">
+              A arte do corte <span className="text-[#c9a84c]">perfeito.</span>
+            </p>
+            <p className="text-[#888888] py-2 text-9xs">
+              Agende seu horário de forma rápida e prática.
             </p>
           </div>
 
-          <div className="flex gap-4 m-2 justify-center">
-            <Button
+          <div className="flex justify-center gap-5">
+            <a
               href="/login"
-              className="bg-[#C08552] hover:bg-[#A8703F] text-[#161412] font-semibold px-6 py-2.5 rounded-md transition-colors"
+              className="border rounded text-2xs bg-[#c9a84c] text-black text-center px-7 py-3"
             >
               Entrar
-            </Button>
-
-            <Button
+            </a>
+            <a
               href="/cadastro"
-              className="border border-[#6B5F4F] text-[#F2EDE4] font-semibold px-6 py-2.5 rounded-md hover:bg-[#211E1A] transition-colors"
+              className="border rounded border-[#f0ebe074] text-2xs bg-[#111111] text-[#f0ebe0] text-center px-7 py-3"
             >
               Cadastrar-se
-            </Button>
+            </a>
           </div>
 
-          <a href="#" className="flex justify-center text-gray-400">
-            Agendar sem login.
+          <a
+            href="#"
+            className="text-[#888888] flex justify-center pt-4 pb-9 text-4xs"
+          >
+            Agendar sem login
           </a>
         </section>
 
         {/* Card de Serviços */}
-        <div className="py-10">
-          <h2 className="flex justify-center text-white font-bold mb-4">
-            Serviços
-          </h2>
-          <ul className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 bg-[#0f0e0d] list-none">
-            <li className="flex flex-col items-center justify-center h-28 bg-[#1e1c1a] rounded-xl text-white cursor-pointer hover:bg-[#272421] transition">
+        <div className="flex flex-col items-center border-b border-[#c9a84c] pb-15">
+          <h2 className="text-3xl text-[#f0ebe0] pt-11 pb-8">Serviços</h2>
+          <ul className="flex gap-5">
+            <li className="text-[#f0ebe0] bg-[#1a1a1a] border rounded-xl p-5">
               Corte
+              <span className="flex text-[#888888] pt-2">
+                Corte clássico ou moderno.
+              </span>
             </li>
-            <li className="flex flex-col items-center justify-center h-28 bg-[#1e1c1a] rounded-xl text-white cursor-pointer hover:bg-[#272421] transition">
+            <li className="text-[#f0ebe0] bg-[#1a1a1a] border rounded-xl p-5">
               Barba
+              <span className="flex text-[#888888] pt-2">
+                Modelagem e hidratação.
+              </span>
             </li>
-            <li className="flex flex-col items-center justify-center h-28 bg-[#1e1c1a] rounded-xl text-white cursor-pointer hover:bg-[#272421] transition">
+            <li className="text-[#f0ebe0] bg-[#1a1a1a] border rounded-xl p-5">
               Sobrancelha
+              <span className="flex text-[#888888] pt-2">
+                Design e alinhamento.
+              </span>
             </li>
-            <li className="flex flex-col items-center justify-center h-28 bg-[#1e1c1a] rounded-xl text-white cursor-pointer hover:bg-[#272421] transition">
+            <li className="text-[#f0ebe0] bg-[#1a1a1a] border rounded-xl p-5">
               Combo
+              <span className="flex text-[#888888] pt-2">
+                Corte + barba + sobrancelha.
+              </span>
             </li>
           </ul>
         </div>
 
         {/* Fotos dos cortes */}
-        <div className="w-full h-48 bg-[#1e1c1a] rounded-md flex items-center justify-center text-[#6B5F4F] text-sm my-10">
+        <div className="border-b border-[#c9a84c] p-5 flex justify-center text-[#f0ebe0] text-3xl">
           Fotos em breve
         </div>
 
         {/* Social e Agendamentos */}
-        <div className="py-10">
-          <h2 className="flex justify-center text-white font-bold mb-4">
-            Social e Agendamentos
-          </h2>
-          <div className="w-16 h-16 bg-[#1e1c1a] rounded-md mx-auto mb-4 flex items-center justify-center text-[#6B5F4F] text-xs">
-            IG
-          </div>
+        <div className="flex flex-col items-center p-15">
+          <h2 className="text-[#f0ebe0] text-3xl">Social e Agendamentos</h2>
+          <p className="text-[#888888] text-9xs pb-5 pt-2">
+            Nos siga e agende pelo canal que preferir.
+          </p>
 
-          <button
-            className="w-full bg-[#25D366] hover:bg-[#1FB855] text-[#04331A] font-medium py-2.5 rounded-md transition-colors shadow-sm cursor-pointer"
-            onClick={() => {
-              window.location.href = "https://wa.me/5543999861294";
-            }}
-          >
-            Faça seu agendamento por Whatsapp
-          </button>
+          <div className="flex flex-row gap-5">
+            <button className="text-[#f0ebe0] border rounded p-3">
+              @barberflow
+            </button>
+
+            <button
+              className="text-[#f0ebe0] border rounded bg-[#25D366] px-5 pr-3 pl-7"
+              onClick={() => {
+                window.location.href = "https://wa.me/5543999861294";
+              }}
+            >
+              Agendar pelo Whatsapp
+            </button>
+          </div>
         </div>
       </main>
 
       {/* Rodapé */}
-      <footer className="flex justify-between items-center px-6 py-4 text-xs text-[#6B5F4F] border-t border-[#3A342C]">
-        <span>BarberFlow</span>
-        <span>© {new Date().getFullYear()}</span>
+      <footer className="flex flex-row justify-between bg-[#1a1a1a] p-5">
+        <span className="text-[#f0ebe0]">
+          Barber<span className="text-[#c9a84c]">Flow</span>
+        </span>
+        <span className="text-[#888888]">
+          ©{new Date().getFullYear()} BarberFlow
+        </span>
       </footer>
     </div>
   );
