@@ -4,12 +4,12 @@ function Home() {
       {/* Pagina Principal */}
 
       {/* Cabeçalho */}
-      <header className="bg-[#1a1a1a] flex justify-between items-center p-5 border-b border-gray-500">
+      <header className="flex items-center justify-between border-b border-gray-500 bg-[#1a1a1a] p-5">
         <div>
           <img src="logo.png" alt="LogoBarberFlow" />
         </div>
         <nav>
-          <ul className="flex gap-6 mr-4 text-[#aaaaaa]">
+          <ul className="mr-4 flex gap-6 text-[#aaaaaa]">
             <li>Home</li>
             <li>Sobre</li>
             <li>Serviços</li>
@@ -22,12 +22,12 @@ function Home() {
       <main>
         {/* Home */}
         <section className="border-b border-[#c9a84c]">
-          <div className="flex flex-col gap-1 text-center py-11">
-            <h1 className="text-[#c9a84c] text-xl">Bem-vindo ao BarberFlow</h1>
-            <p className="text-[#f0ebe0] text-5xl py-3">
+          <div className="flex flex-col gap-1 py-11 text-center">
+            <h1 className="text-xl text-[#c9a84c]">Bem-vindo ao BarberFlow</h1>
+            <p className="py-3 text-5xl text-[#f0ebe0]">
               A arte do corte <span className="text-[#c9a84c]">perfeito.</span>
             </p>
-            <p className="text-[#888888] py-2 text-9xs">
+            <p className="text-9xs py-2 text-[#888888]">
               Agende seu horário de forma rápida e prática.
             </p>
           </div>
@@ -35,51 +35,48 @@ function Home() {
           <div className="flex justify-center gap-5">
             <a
               href="/login"
-              className="border rounded text-2xs bg-[#c9a84c] text-black text-center px-7 py-3"
+              className="text-2xs rounded border bg-[#c9a84c] px-7 py-3 text-center text-black"
             >
               Entrar
             </a>
             <a
               href="/cadastro"
-              className="border rounded border-[#f0ebe074] text-2xs bg-[#111111] text-[#f0ebe0] text-center px-7 py-3"
+              className="text-2xs rounded border border-[#f0ebe074] bg-[#111111] px-7 py-3 text-center text-[#f0ebe0]"
             >
               Cadastrar-se
             </a>
           </div>
 
-          <a
-            href="#"
-            className="text-[#888888] flex justify-center pt-4 pb-9 text-4xs"
-          >
+          <a href="#" className="text-4xs flex justify-center text-[#888888]">
             Agendar sem login
           </a>
         </section>
 
         {/* Card de Serviços */}
         <div className="flex flex-col items-center border-b border-[#c9a84c] pb-15">
-          <h2 className="text-3xl text-[#f0ebe0] pt-11 pb-8">Serviços</h2>
+          <h2 className="pt-11 pb-8 text-3xl text-[#f0ebe0]">Serviços</h2>
           <ul className="flex gap-5">
-            <li className="text-[#f0ebe0] bg-[#1a1a1a] border rounded-xl p-5">
+            <li className="rounded-xl border bg-[#1a1a1a] p-5 text-[#f0ebe0]">
               Corte
-              <span className="flex text-[#888888] pt-2">
+              <span className="flex pt-2 text-[#888888]">
                 Corte clássico ou moderno.
               </span>
             </li>
-            <li className="text-[#f0ebe0] bg-[#1a1a1a] border rounded-xl p-5">
+            <li className="rounded-xl border bg-[#1a1a1a] p-5 text-[#f0ebe0]">
               Barba
-              <span className="flex text-[#888888] pt-2">
+              <span className="flex pt-2 text-[#888888]">
                 Modelagem e hidratação.
               </span>
             </li>
-            <li className="text-[#f0ebe0] bg-[#1a1a1a] border rounded-xl p-5">
+            <li className="rounded-xl border bg-[#1a1a1a] p-5 text-[#f0ebe0]">
               Sobrancelha
-              <span className="flex text-[#888888] pt-2">
+              <span className="flex pt-2 text-[#888888]">
                 Design e alinhamento.
               </span>
             </li>
-            <li className="text-[#f0ebe0] bg-[#1a1a1a] border rounded-xl p-5">
+            <li className="rounded-xl border bg-[#1a1a1a] p-5 text-[#f0ebe0]">
               Combo
-              <span className="flex text-[#888888] pt-2">
+              <span className="flex pt-2 text-[#888888]">
                 Corte + barba + sobrancelha.
               </span>
             </li>
@@ -87,26 +84,26 @@ function Home() {
         </div>
 
         {/* Fotos dos cortes */}
-        <div className="border-b border-[#c9a84c] p-5 flex justify-center text-[#f0ebe0] text-3xl">
+        <div className="flex justify-center border-b border-[#c9a84c] p-5 text-3xl text-[#f0ebe0]">
           Fotos em breve
         </div>
 
         {/* Social e Agendamentos */}
         <div className="flex flex-col items-center p-15">
-          <h2 className="text-[#f0ebe0] text-3xl">Social e Agendamentos</h2>
-          <p className="text-[#888888] text-9xs pb-5 pt-2">
+          <h2 className="text-3xl text-[#f0ebe0]">Social e Agendamentos</h2>
+          <p className="text-9xs pt-2 pb-5 text-[#888888]">
             Nos siga e agende pelo canal que preferir.
           </p>
 
           <div className="flex flex-row gap-5">
-            <button className="text-[#f0ebe0] border rounded p-3">
+            <button className="rounded border p-3 text-[#f0ebe0]">
               @barberflow
             </button>
 
             <button
-              className="text-[#f0ebe0] border rounded bg-[#25D366] px-5 pr-3 pl-7"
+              className="rounded border bg-[#25D366] px-5 pr-3 pl-7 text-[#f0ebe0]"
               onClick={() => {
-                window.location.href = "https://wa.me/5543999861294";
+                window.location.href = "https://wa.me/5543999861294"
               }}
             >
               Agendar pelo Whatsapp
@@ -125,7 +122,7 @@ function Home() {
         </span>
       </footer>
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Home
